@@ -32,11 +32,11 @@
 
 .Gallery {
   @media screen and (min-width: 1280px) {
-    background-image: url('../images/advantages/advantages__descktop/home-pic5\ 1.png');
+    background-image: url('./images/advantages/advantages__descktop/home-pic5-1.png');
   }
   @media (min-resolution: 2dppx) {
     background-image: (
-      '../images/advantages/advantages__descktop/home-pic5\ 1@2x.png'
+      './images/advantages/advantages__descktop/home-pic5-1@2x.png'
     );
   }
   background-repeat: no-repeat;
@@ -44,22 +44,22 @@
 }
 .Gallery {
   @media screen and (max-width: 767px) {
-    background-image: url('../images/advantages/advantages__mobile/home-pic5\ 1.png');
+    background-image: url('./images/advantages/advantages__mobile/home-pic5-1.png');
   }
   @media (min-resolution: 2dppx) {
     background-image: (
-      '../images/advantages/advantages__mobile/home-pic5\ 1@2x.png'
+      './images/advantages/advantages__mobile/home-pic5-1@2x.png'
     );
   }
   background-repeat: no-repeat;
 }
 .Gallery {
   @media screen and (min-width: 768px) {
-    background-image: url('../images/advantages/advantages__tablet/home-pic5\ 1.png');
+    background-image: url('./images/advantages/advantages__tablet/home-pic5-1.png');
   }
   @media (min-resolution: 2dppx) {
     background-image: (
-      '../images/advantages/advantages__tablet/home-pic5\ 1@2x.png'
+      './images/advantages/advantages__tablet/home-pic5-1@2x.png'
     );
   }
   background-repeat: no-repeat;
