@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="shortcut icon" href="./images/slush.svg" type="image/x-icon" />
+
     <link
       rel="stylesheet"
       type="text/css"
@@ -14,12 +16,14 @@
       type="text/css"
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
     />
+
     <title>Заголовок страницы</title>
   </head>
   <body>
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
     <!-- <include src="./partials/example.html"></include> -->
     <main>
+      <include src="./partials/header.html"></include>
 
       <include src="./partials/products.html"></include>
 
@@ -43,14 +47,9 @@
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
     <script src="./js/main.js"></script>
+    <!-- <script src="./js/modal.js"></script> -->
 
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
-
-    <!-- <link rel="stylesheet" href="./libs/slick/slick.css" />
-    <link rel="stylesheet" href="./libs/slick/slick-theme.css" />
-    <script src="./libs/jquery.min.js"></script>
-    <script src="./libs/slick/slick.min.js"></script>
-    <script src="./libs/main.js"></script> -->
 
     <script src="./index.js"></script>
   </body>
