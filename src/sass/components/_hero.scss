@@ -244,6 +244,7 @@
     height: 1px;
     position: relative;
     top: -0.02px;
+    left: -6px;
     background-color: $menu-icon-lines-color;
   }
 
@@ -303,7 +304,7 @@
   align-items: center;
   text-align: center;
   .menu-buy-now-arrow {
-    margin-left: 16px;
+    margin-left: 12px;
     font-weight: 900;
   }
 }
@@ -493,12 +494,16 @@
 }
 
 .hero-milk-anker {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: auto;
   margin-top: 7px;
   width: 18px;
   height: 18px;
   background-color: #fff;
   border-radius: 50%;
+
   @media screen and (min-width: $desktop-width) {
     width: 26px;
     height: 26px;
@@ -554,7 +559,7 @@
       content: '';
       position: absolute;
       top: -2px;
-      left: 152px;
+      left: 114px;
       width: 16px;
       height: 16px;
       border-radius: 50%;
@@ -562,6 +567,8 @@
       background-color: $white-color;
 
       @media screen and (min-width: $desktop-width) {
+        top: -4px;
+        left: 99px;
         width: 30px;
         height: 30px;
       }
@@ -607,5 +614,16 @@
 
   li {
     margin-left: 35px;
+    a {
+      white-space: nowrap;
+    }
+  }
+}
+
+.header-cafes-count {
+  margin-top: 0;
+  margin-right: 0;
+  @media screen and (min-width: $desktop-width) {
+    margin-right: 24px;
   }
 }

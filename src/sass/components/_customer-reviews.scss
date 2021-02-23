@@ -14,22 +14,18 @@
 }
 
 .container-reviews {
-  @extend %containerMobile;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 
-  @media screen and (min-width: $tablet) {
-    min-width: 768px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 34px;
-    padding-right: 34px;
+  @media screen and(min-width:768px) {
+    width: 700px;
+    padding: 0;
   }
-
-  @media screen and (min-width: $desktop) {
-    max-width: 1280px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 115px;
-    padding-right: 115px;
+  @media screen and(min-width:1200px) {
+    width: 1050px;
   }
 }
 
@@ -50,7 +46,6 @@
   }
 
   @media screen and (min-width: $desktop) {
-    // padding: 32px 54px 32px 50px;
     width: 926px;
     height: 138px;
     margin-bottom: 15px;
