@@ -5,7 +5,7 @@
   margin-right: auto;
   background-color: $bgc-secondary-color;
 
-  background-image: url('../images/about/milk-sprays/milk-sprays__mobile/sectionbg1 1.png');
+  background-image: url('../images/about/milk-sprays/milk-sprays__mobile/sectionbg1.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position-y: 85%;
@@ -13,7 +13,7 @@
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    background-image: url('../images/about/milk-sprays/milk-sprays__mobile/sectionbg1 1@2x.png');
+    background-image: url('../images/about/milk-sprays/milk-sprays__mobile/sectionbg1@2x.png');
   }
   @media screen and(min-width:768px) {
     padding-top: 130px;
