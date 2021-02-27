@@ -243,3 +243,11 @@ button#slick-slide-control02 {
   height: 12px;
   border-radius: 50%;
 }
+
+.slick-active button#slick-slide-control01,
+.slick-active button#slick-slide-control02 {
+  background-color: $button-contacts-color;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}

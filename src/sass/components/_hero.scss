@@ -1,3 +1,16 @@
+@keyframes ice-cream-appearance {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+.hero-container {
+  background-color: $hero-bgc;
+}
+
 .font-for-header {
   font-family: Titan One;
   font-size: 26px;
@@ -63,7 +76,7 @@
   background-color: $hero-bgc;
 
   margin: 0 auto;
-  z-index: 1;
+  // z-index: 1;
 
   display: flex;
 
@@ -207,6 +220,8 @@
   &-him {
     background-color: $header-link-bg;
     color: $header-him-link-color;
+    // width: 100%;
+
     &:hover,
     &:focus {
       background-color: $button-Howitsmade-hover-color;
@@ -215,7 +230,7 @@
     @media screen and (min-width: $desktop-width) {
       font-family: DM Sans;
       font-size: 14px;
-      line-height: 18px;
+      line-height: 1.3;
       display: flex;
       align-items: center;
       text-align: center;
@@ -274,12 +289,12 @@
 }
 
 .header-drop-menu {
-  position: absolute;
+  position: fixed;
   top: 0px;
   right: 0px;
 
   width: 254px;
-  height: 100vh;
+  height: 100%;
   padding: 60px 21px;
 
   z-index: 17;
@@ -430,6 +445,8 @@
   left: 63%;
   z-index: 1;
   transform: translateX(-50%);
+
+  animation: ice-cream-appearance 1s linear 0 1 normal forwards;
   @media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
     left: 58%;
   }

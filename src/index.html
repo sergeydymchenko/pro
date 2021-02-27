@@ -18,6 +18,24 @@
     />
 
     <title>ice cream</title>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+      $(function () {
+        $(window).scroll(function () {
+          if ($(this).scrollTop() != 0) {
+            $('#toTop').fadeIn();
+          } else {
+            $('#toTop').fadeOut();
+          }
+        });
+
+        $('#toTop').click(function () {
+          $('body,html').animate({ scrollTop: 0 }, 800);
+        });
+      });
+    </script>
   </head>
   <body>
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
@@ -38,7 +56,12 @@
       <include src="./partials/contacts.html"></include>
 
       <include src="./partials/footer.html"></include>
+
+      <script src="./js/menu.js"></script>
+      <script src="./js/modal.js"></script>
     </main>
+
+    <div id="toTop">^</div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
@@ -48,9 +71,10 @@
     ></script>
     <script src="./js/main.js"></script>
     <script src="./js/menu.js"></script>
+    <script src="./js/about/popup.js"></script>
 
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
-    
+
     <script src="./index.js"></script>
   </body>
 </html>
